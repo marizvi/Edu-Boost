@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(0.25turn, #ffffff 70%, #a8a8a8 );
+}
+.hrline{
+    margin: 1px auto;
+    width: calc(12rem + 5vw)
+}
+nav{
+    margin: 0px;
+    color: white;
+    background: url("../static/images/img2.jpg");
+    background-size: cover;
+    height: calc(7rem + 5vw);
+    border: 1.5px solid white;
+    border-radius: 8px;
+}
+nav .topsec{
+    margin: 8px 0px;
+   font-family: 'Proza Libre', sans-serif;
+    font-size: calc(0.75rem + 1vw);
+    position: relative;
+    /* border: 2px solid black; */
+    text-align: center;
+}
+nav .topsec h2{
+    font-size: calc(1.6rem + 1vw);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+nav .topsec h5{
+    margin: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav .toptodo{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+}
+#sub_code{
+    cursor: pointer;
+    position: relative;
+    width: calc(5.5rem + 2vw);
+}
+.sub_wrap{
+    position: relative;
+    top: 32px;
+}
+nav .toplogout{
+    position: relative;
+    bottom: 28px;
+}
+nav .topbtn{
+    margin: 2px 8px;
+    position: relative;
+    top: calc(0.8rem + 2vw);
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+button{
+    cursor: pointer;
+    background-color: rgb(221, 9, 108);
+    padding: 4px 5px;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+.main_title{
+    text-align: center;
+}
+
+.user_email{
+    margin: 0px;
+    text-align: center;
+}
+nav button{
+    background-color: rgb(221, 9, 108);
+    width: 60px;
+    padding: 6px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+nav h5{
+    margin: 10px;
+}
+
+.hide{
+    display: none;
+}
+.wrap{
+display: flex;
+flex-wrap: wrap;
+max-width: 1080px;
+margin: 4px auto;
+justify-content: space-around;
+/* align-items: center; */
+}
+legend{
+    padding: 2px 5px;
+    border: 1px solid white;
+    border-radius: 4px;
+    background: #2f4561;
+    text-align: center;
+    color: white;
+}
+fieldset{
+    border-radius:6px ;
+    border: 2px solid white;
+    background: url("../static/images/img19.jpg");
+    background-size: cover;
+}
+.Notice_Wrap{
+    /* border: 2px solid red; */
+    display: flex;
+    height: 160px;
+    width: calc(11rem + 4vw);
+    margin: 10px 3px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.Assign_Wrap{
+    /* border: 2px solid red; */
+    display: flex;
+    height: 160px;
+    width: calc(11rem + 4vw);
+    margin: 10px 3px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}

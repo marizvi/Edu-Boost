@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="362154966855-rd2udkip3pagmm0v6a1ime2b5i6vpa78.apps.googleusercontent.com">
+    <title>FLiprX</title>
+</head>
+ style
+      include ../static/index.css
+<body>
+
+    h4 #{myemail}
+    
+//- <a href="#" onclick="signOut();">Sign out</a>
+<div class = "container">
+<fieldset class="wrapper_login">
+<Legend><h4>Login</h4></Legend>
+<form action="/login" method="POST">
+<input type="text" name = "email" placeholder="Email here">
+<br>
+<input type="password" name="pass" id="" placeholder="Password here">
+<br>
+<button name="button" value="1" class="login_btn">Login</button>
+</form>
+<div class="alert">
+<p>#{User_status}</p>
+</div>
+//- </div>
+//- </div>
+<h3>OR</h3>
+<div class="glogin">
+<div class="g-signin2" data-onsuccess="onSignIn"></div>
+</div>
+</fieldset>
+<div class="register_btn">
+<a href="/register"><button>Register</button></a>
+</div>
+</div>
+</body>
+script(src="../static/backend.js")
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="362154966855-rd2udkip3pagmm0v6a1ime2b5i6vpa78.apps.googleusercontent.com">
+    <title>FLiprX</title>
+</head>
+ style
+      include ../static/register.css
+<body>
+    <div class="heading">
+    <h2>Register Page</h2>
+    </div>
+
+    h4 #{User_status}
+    h4 #{myemail}
+    <div class="home">
+    <a href="/"><button>Home</button></a>
+    </div>
+br
+<hr>
+    <div class="box">
+    <div class="wrap">
+    <fieldset class = "wrapper_student">
+    <Legend>Register as Student</Legend>
+    <form action="/register" method="POST">
+    <input type="text" name = "email" placeholder="Email here">
+    <input type="password" name="pass" id="" placeholder="password here">
+    <input type="password" name="confirm_pass" id="" placeholder="confirm password">
+    br
+    <button id = "student" name = "stud" class="regbtn" value = "1" >Register as Student</button>
+    </form>
+    </fieldset>
+    
+    br
+    <fieldset class="wrapper_teacher">
+    <Legend>Register as Teacher</Legend>
+    <form action="/register" method="POST">
+    <input type="text" name = "email" placeholder="Email here">
+    <input type="text" name = "subjectCode" class="hide" placeholder="Subject Code here" id="subjectcode">
+    <input type="text" name = "subject" placeholder="Subject name here">
+    <input type="text" name = "username" placeholder="Username here">
+    br
+    <input type="password" name="pass" id="" placeholder="password here">
+    <input type="password" name="confirm_pass" id="" placeholder="confirm password">
+    br
+    <button id = "teacher" class="regbtn" name = "tech" value = "1" >Register as Teacher</button>
+    </form>
+    </fieldset>
+    </div>
+    </div>
+</body>
+script(src="../static/register.js") 
+</html>

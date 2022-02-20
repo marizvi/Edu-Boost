@@ -1,0 +1,87 @@
+*{
+padding: 0;
+margin: 0;
+}
+body{
+    color: white;
+    background-color: rgb(20, 20, 65);
+}
+.hide{
+    display:none;
+}
+form{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.box{
+    position: relative;
+    top: calc(11rem - 4vw);
+    max-width: 1080px;
+    /* border: 1px solid white; */
+    margin: 4px auto;
+}
+.wrap{
+    /* max-width: 1080px; */
+    display: flex;
+    /* border: 1px solid white; */
+}
+.heading{
+    margin: 20px;
+    text-align: center;
+}
+.home{
+    display: flex;
+    justify-content: center;
+}
+.home button{
+    height: 25px;
+    width: 55px;
+    border-radius: 6px;
+    background-color: rgb(34, 77, 133);
+    color: white;
+    border: 0.2px solid white;
+
+}
+legend{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+input{
+    margin: 8px;
+}
+.wrapper_student{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper_teacher{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.regbtn{
+    border-radius: 6px;
+    height: 30px;
+    background-color: rgb(15, 65, 141);
+    color: white;
+    align-self: center;
+    width: 150px;
+    border: 0.2px solid white;
+}
+fieldset{
+    background-color: rgb(27, 38, 87);
+    border-radius: 8px;
+    width: 260px;
+    margin: 2px auto;
+}
+@media screen and (max-width:600px){
+    .wrap{
+        /* max-width: 1080px; */
+        display: block;
+        /* border: 1px solid white; */
+    }
+    .box{
+        top: calc(7rem - 4vw);
+    }
+}

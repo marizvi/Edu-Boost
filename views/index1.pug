@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="362154966855-rd2udkip3pagmm0v6a1ime2b5i6vpa78.apps.googleusercontent.com">
+    <title>FLiprX</title>
+     style
+      include ../static/style.css
+</head>
+<body>
+
+h4 #{User_status}
+    h4 #{tempmail}
+    h4 #{Occup_Status}
+    <h2>Index Page</h2>
+    <a href="/register"><button>register</button></a>
+    <a href="/login" onclick="signOut1();"><button>login</button></a>
+
+    <div class="g-signin2" data-onsuccess="onSignIn" id="gauth_home"></div>
+    //- <button><a href="#" onclick="signOut();">Sign ouut</a></button>
+    <form action="/" method="POST">
+    <input type="text" name = "email" placeholder="Email here">
+    <input type="number" name="number" id="">
+    button submit
+    </form>
+</body>
+script(src="../static/backend.js")
+</html>

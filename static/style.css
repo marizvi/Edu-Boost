@@ -1,0 +1,12 @@
+body{
+    background-color: rgb(255, 202, 202);
+}
+#gauth_home{
+    display: none;
+}
+.hide{
+    display: none;
+}
+.alert{
+    color: red;
+}

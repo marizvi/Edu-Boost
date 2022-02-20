@@ -1,0 +1,8 @@
+
+.list{
+    border: 1px solid black;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-around;
+    margin: 8px 3px;
+}

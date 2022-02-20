@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(0.25turn, #d8d7d7, #ffffff);
+}
+.hrline{
+    margin: 1px auto;
+    width: calc(12rem + 5vw)
+}
+nav{
+    margin: 0px;
+    color: white;
+    background: url("../static/images/img2.jpg");
+    background-size: cover;
+    height: calc(7rem + 5vw);
+    border: 1.5px solid white;
+    border-radius: 8px;
+}
+nav .topsec{
+    margin: 8px 0px;
+   font-family: 'Proza Libre', sans-serif;
+    font-size: calc(0.75rem + 1vw);
+    position: relative;
+    /* border: 2px solid black; */
+    text-align: center;
+}
+nav .topsec h2{
+    font-size: calc(1.6rem + 1vw);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+nav .topsec h5{
+    margin: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+nav .topbtn{
+    margin: 2px 8px;
+    position: relative;
+    top: calc(0.8rem + 2vw)
+}
+nav .toptodo{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+}
+nav .toplogout{
+    position: relative;
+    bottom: 48px;
+    display: flex;
+    justify-content: flex-end;
+}
+#join{
+    margin: 8px;
+}
+#join button{
+    background-color: rgb(221, 9, 108);
+    width: 50px;
+    padding: 2px;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+.main_title{
+    text-align: center;
+}
+
+.user_email{
+    margin: 0px;
+    text-align: center;
+}
+nav button{
+    background-color: rgb(221, 9, 108);
+    width: 60px;
+    padding: 6px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+nav h5{
+    margin: 10px;
+}
+.box{
+    position: relative;
+    margin: 12px;
+    border: 1px solid grey;
+    background: linear-gradient(60deg, #6b6b6b, #bbbaba,white);
+    width: calc(11rem + 4vw);
+    height: 170px;
+    border-radius: 8px;
+}
+.box button{
+    padding: 2px;
+    margin: 3px;
+    background-color: rgb(221, 9, 108);
+    color: white;
+}
+.box #bttn{
+    display: flex;
+    margin: 5px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: calc(2.4rem + 2.5vw);
+    top: 101px;
+
+}
+.box #email{
+    margin: 12px 1px; 
+    position: absolute;
+    left: calc(0.5rem + 2vw);
+}
+.assigns{
+    display: flex;
+    margin: 2px auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1080px;
+    /* border: 1px solid black; */
+}
+.hide{
+    display: none;
+}
+.title{
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding:0px;
+}
+
+/* .content h4{
+    text-align: center;
+    text-decoration: underline;
+} */
+.teacher
+{
+    text-align: center;
+}

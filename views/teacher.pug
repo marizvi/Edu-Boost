@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="362154966855-rd2udkip3pagmm0v6a1ime2b5i6vpa78.apps.googleusercontent.com">
+    <title>FLiprX</title>
+     style
+      include ../static/teacher.css
+</head>
+<body>
+    <nav>
+    <div class="top">
+        <section class="topsec">
+            <h2>Edu-Boost</h2>
+            <h5>Welcomes You</h5>
+</section>
+<hr class="hrline">
+<div class="sub_wrap">
+ <a href="/subject_code"><button id="sub_code">Subject Code</button></a>
+ </div>
+<section class="topbtn">
+ <form action="/" method="POST" class="toplogout">
+ <button id="logoutbtn" onclick="signOut();">Logout</button>
+ </form>
+ </section>
+    </div>
+    </nav>
+    <h2 class="main_title">Teacher Page</h2>
+    <div class="user_email">
+    <h5>#{tempmail}</h5>
+    </div>
+
+br
+hr
+br
+<div class="wrap">
+<fieldset class="Notice_Wrap">
+<Legend>Notice Section</Legend>
+<form action="/notice" method="GET">
+    <button id = "notice">Add Notice</button></a>
+</form>
+<form action="/notice_edit" method="GET">
+    <button id = "notice">Edit Notice</button></a>
+</form>
+</fieldset>
+<fieldset class = "Assign_Wrap">
+<Legend>Assignment Section</Legend>
+    <form action="/teacher" method="POST">
+    <input type="text" name="email" class="hide" id="email" value=#{tempmail}>
+    <button id = "teacher_assign"> Go To Assignment Page</button></a>
+    </form>
+<form action="/assigned" method="POST">
+<button name="button" value=#{tempmail}>Assigned List Here</button>
+</form>
+</fieldset>
+</div>
+
+</body>
+//- script(src="../static/teacher.js")
+</html>

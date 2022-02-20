@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="362154966855-rd2udkip3pagmm0v6a1ime2b5i6vpa78.apps.googleusercontent.com">
+    <title>FLiprX</title>
+     style
+      include ../static/style.css
+</head>
+<body>
+h4 #{User_status}
+    h4 #{tempmail}
+    h4 #{Occup_Status}
+    <h2>Teacher Page</h2>
+    <form action="/teacher" method="GET">
+    <button>Home</button>
+    </form>
+    hr
+    <form action="/teacher_assign" method="POST">
+    <input type="Text" name="email" id="email" value=#{tempmail} class="hide">
+    <input type="Text" name="assign_id" id="assign_id" class="hide" placeholder="Assignment id here">
+    <input type="Text" name="title" id="title" placeholder="Assignment title here">
+    br
+    br
+    <textarea name="content" id="content" cols="30" rows="6"></textarea>
+    <input type="date" id = "deadline" name="deadline" value="-1">
+    <h4 class="alert"> #{alert_msg}</h4>
+    br
+    br
+    <button> Post</button>
+    </form>
+</body>
+script(src="../static/teacher_assign.js")
+</html>

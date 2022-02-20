@@ -1,0 +1,1 @@
+how to update entry in nested schema, in order to add email under submissions section.

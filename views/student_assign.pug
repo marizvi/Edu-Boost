@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="362154966855-rd2udkip3pagmm0v6a1ime2b5i6vpa78.apps.googleusercontent.com">
+    <title>FLiprX</title>
+     style
+      include ../static/style.css
+      include ../static/student_assign.css
+</head>
+<body>
+h4 #{User_status}
+    h4 #{tempmail}
+    h4 #{usermail}
+    h4 #{Occup_Status}
+    <h2>Student Page</h2>
+    <form action="/student" method="GET">
+<button>Home</button>
+</form>
+    
+    <input type="text" name="email" id="teacher_email" value=#{tempmail} class = "hide">
+     <input type="text" id="studemail" value=#{usermail} class="hide">
+    br
+    hr
+<div class="assignments" id="assignments">
+    
+</div>
+</body>
+script(src="../static/student_assign.js")
+</html>
